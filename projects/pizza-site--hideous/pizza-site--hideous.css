@@ -1,0 +1,64 @@
+body {
+    background-color: #ca8f53;
+}
+
+form {
+    width: 275px;
+    background-color: #af3c25;
+}
+
+fieldset {
+    width: 350px;
+}
+
+label.payment {
+    color: darkblue;
+    text-align: right;
+    width: 200px;
+    float: left;
+}
+
+legend {
+    background-color: gold;
+}
+
+.inputbox {
+    color: navy;
+}
+
+.order .inputbox {
+    background-color: lightgreen;
+}
+
+.delivery .inputbox {
+    background-color: lightseagreen;
+}
+
+.payment .inputbox {
+    color: yellow;
+    background-color: seagreen;
+}
+
+.req {
+    color: red;
+}
+
+.order {
+    /* background-color: lightblue; */
+    background-color: #88aaffdd;
+}
+
+.submit {
+    height: 50px;
+    width: 270px;
+    margin: 10px 110px;
+    background-color: springgreen;
+}
+
+.delivery {
+    background-color: cornflowerblue;
+}
+
+.payment {
+    background-color: dodgerblue;
+}

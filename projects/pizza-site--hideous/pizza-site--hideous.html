@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="pizza-site--hideous.css">
+</head>
+
+<body>
+
+    <form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+
+        <fieldset id="order" class="fs order">
+            <legend>Order</legend>
+
+            <datalist id="size-opts">
+                <option value='7"'></option>
+                <option value='10"'></option>
+                <option value='12"'></option>
+            </datalist>
+
+                <p>
+                <label for="top-margherita">Margherita:</label><br>
+                <input id='top-margherita' type="number" name="n-margherita" class="inputbox topping" placeholder="How many?" min="0">
+                <input id='size-margherita' name="size-margherita" list="size-opts" class="inputbox size" placeholder="Size">
+                </p>
+
+                <p>
+                <label for="top-pepperoni">Pepperoni:</label><br>
+                <input id='top-pepperoni' type="number"  name="n-pepperoni" class="inputbox topping" placeholder="How many?" min="0">
+                <input id='size-pepperoni' name="size-pepperoni" list="size-opts" class="inputbox size" placeholder="Size">
+                </p>
+
+                <p>
+                <label for="top-anchovy">Anchovy:</label><br>
+                <input id='top-anchovy' type="text" name="n-anchovy" class="inputbox topping" value="Just... No!" max='0' disabled>
+                <input id='size-anchovy' name="size-anchovy" type="text" class="inputbox size" value="Still NO" disabled><br>
+                </p>
+
+            </fieldset>
+
+
+        <fieldset class="delivery">
+            <legend>Delivery details</legend>
+
+            <p>
+            <!-- <label for="f-name" class="req">*</label> -->
+            <input id="f-name" name="l-name" type="text" class="inputbox" placeholder="First name" required>
+
+            <!-- <label for="l-name" class="req">*</label> -->
+            <input id="l-name" name="l-name" type="text" class="inputbox" placeholder="Surname" required>
+            </p>
+
+            <p>
+            <input id="address1" type="text" name="address1" class="inputbox" placeholder="Street name">
+            <input id="house-number" name="house-number" type="text" class="inputbox" placeholder="House number / name">
+            </p>
+
+            <p>
+            <input id="address2" type="text" name="address2" class="inputbox" placeholder="Town">
+            <input id="postcode" type="text" name="postcode" class="inputbox"  placeholder="Postcode" pattern="[a-zA-Z]{1,2}\d{1,2} *\d[a-zA-Z]{2}">
+            </p>
+
+        </fieldset>
+
+        <fieldset class="payment">
+            <legend>Payment details</legend>
+
+            <p><span class="req">*</span> Required</p>
+            <p>
+            <label class="field payment" for="cardholder"><span class="req">*</span>Name on card: </label>
+            <input id="cardholder" name="cardholder" type="text" class="inputbox" required>
+            </p>
+
+            <p>
+            <label class="field payment" for="card-num"><span class="req">*</span>Enter Card number: </label>
+            <input in='card-num' name="card-num" type="text" class="inputbox" placeholder="0000 0000 0000 0000" pattern='(\d{16})|(\d\d\d\d) \2 \2 \2' required>
+            </p>
+
+            <p>
+            <label class="field payment" for="csv-num"><span class="req">*</span>Three digit security number: </label>
+            <input in='csv-num' name="csv-num" type="text" class="inputbox" placeholder="000" pattern='\d\d\d' required><br>
+            </p>
+
+
+
+
+    </fieldset>
+
+    <input type="submit" class="submit" value="🍕🍕  Place Order  🍕🍕">
+    </form>
+
+
+</body>
+
+</html>
